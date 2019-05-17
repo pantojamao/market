@@ -1,16 +1,17 @@
 <?php
-  //credenciaales de conexion a BD
-//127.0.0.1/market/database.php 
-     $username="root";
-     $servername="localhost";
-     $password="";
-     $dbname="market";
+    $servername="localhost";
+    $username="root";
+    $pass="";
+    $DBname="market";
 
-   $conn =new mysqli($servername,$username,$password,$dbname);
+    //create connection to database
+
+    $conn = new mysqli($servername,$username,$pass,$DBname);
+    //cheking
     if($conn->connect_error){
-     die("ERROR : " . connect_error);
-      } else{
-       die("conexion exitosa a market");
-        }
-         
+        die("Connection failed".$conn->connect_error);
+    }else{
+        //echo "i am connectes to tienda";
+    }
+
 ?>
