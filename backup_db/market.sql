@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-05-2019 a las 18:51:47
+-- Tiempo de generación: 10-05-2019 a las 18:51:52
 -- Versión del servidor: 10.1.29-MariaDB
 -- Versión de PHP: 7.2.0
 
@@ -79,13 +79,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `firstname`, `lastname`, `gender`, `email`, `password`, `photo`) VALUES
-(6, 'Peter', 'McDonald', '', 'peter@gmail.com', '$2y$10$HiZIR8WgxNdF617V2eve5uN4C.xnwbfJQrGX7u/c9d1', NULL),
-(7, 'John', 'Martinez', '', 'john@gmail.com', '$2y$10$S1ggaP9sFaD35Dl17ngEIO2s5eIk/Tbr5Vkz3blBzcq', 'images/img_default.png'),
-(8, 'Kelly', 'Sofia', '', 'kelly@gmail.com', '$2y$10$Avu4GfGY50v05pO0KI2HEO/fx9lWSi0wrNiUGgN0.rs', 'images/img_default.png'),
-(9, 'Mario', 'Urbano', '', 'mario@gmail.com', '$2y$10$dLgScJ0TRDZgI3tJd0XKsOKCPQp39qaiKLezXKkOwtG', 'images/boy.png'),
-(10, 'Juliana', 'Eraso', '', 'juliana@hotmail.com', '$2y$10$AhbgNvMj1ZUiQYSnegc/TuAPKFFG2uywVqsgapGp40n', 'images/boy.png'),
-(11, 'Sofia', 'Lasso', '', 'sofia@gmail.com', '$2y$10$oRdNTVaX.K9LR6ON91Sqj.AxuefYzJrkoduRV6Bn5ds', 'images/girl.png'),
-(12, 'Mariana', 'Korbe', '', 'mariana@yahoo.es', '$2y$10$5Q1ObjUEc5aziXySqmFfmuw9fnRWxTtn9H34OYvt.yM', 'images/img_default.png');
+(4, 'Peter', 'Alonso', 'M', 'peter2@gmail.com', '$2y$10$9u5/tv2hdtkAjZRzgHr1W.rLtgxlWtoWxxZwTbDp.lK', 'images/boy.png'),
+(5, 'Karen', 'Zambrano', 'F', 'peter3@gmail.com', '$2y$10$vF9XD7gUgexQ2KiRHS.UaudX4S7wHFGvrP0KsDbDe0C', 'images/girl.png'),
+(6, 'brayan', 'ra', '', 'bs@gma.com', '$2y$10$cgKC0Mca0KpWl7YnKG7e9uAwa8d8Ns3QQClywmV8CBU', 'images/boy.png');
 
 --
 -- Índices para tablas volcadas
@@ -119,7 +115,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
